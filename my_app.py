@@ -2,8 +2,12 @@
 
 from flask import Flask
 
-web_app = Flask(__name__)
+app = Flask(__name__)
 
-@web_app.route('/')
+@app.route('/')
 def helloworld():
     return '<h1>Hello World!</h1>', 200
+
+if __name__ == '__main__':
+    app.run()
+    

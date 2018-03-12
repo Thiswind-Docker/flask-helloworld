@@ -1,3 +1,3 @@
 #!/usr/bin/env python
 
-from application import web_app
+import my_app.app as web_app
